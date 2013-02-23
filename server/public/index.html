@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slideshow</title>
+		<link rel="stylesheet" href="/src/style.css">
+	</head>
+	<body>
+		<script data-main="/src/main.js" src="/src/require.js"></script>
+		<script>
+			require.config({
+				urlArgs: (new Date()).getTime()
+			});
+			require({
+				paths: {
+					happy: "/happy"
+				}
+			});
+		</script>
+	</body>
+</html>
